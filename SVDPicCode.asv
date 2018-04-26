@@ -1,0 +1,7 @@
+I = imread('LinPuppy.jpg');
+imshow(I)
+%rbgColor = impixel(rgbImage, column, row);
+Isma = I(1000:1003, 1000:1003);
+%Isma = I(1000:1003, 1000:1003, 1:3);
+Isma
+[U,S,V] = svd(Isma)
